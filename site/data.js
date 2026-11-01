@@ -21,7 +21,8 @@ window.KTB = {
   ],
 
   // What runs on the home server and the tools being built.
-  // image: a picture in assets/, or panel: "log" | "swap" for a drawn fragment.
+  // image: a .jpg in assets/ with NAME-800.webp and NAME-1600.webp beside it (or add webp: false),
+  // or panel: "log" | "swap" for a drawn fragment.
   lab: [
     { name: "This page", kind: "Live, public", host: "killtheboy.my.id", url: "https://killtheboy.my.id", status: "live", image: "assets/server-rack.jpg", pos: "50% 30%" },
     { name: "Status", kind: "Planned, public", host: "status.killtheboy.my.id", status: "planned", image: "assets/server-rack.jpg", pos: "50% 80%" },
