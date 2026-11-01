@@ -1,0 +1,6 @@
+# taste-skill working files (inspector screenshots, direction sheet)
+.taste-skill/
+# third-party skill, restored from skills-lock.json
+.claude/skills/
+# local backup of the previous design
+site-prev/

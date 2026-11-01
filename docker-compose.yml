@@ -1,0 +1,11 @@
+# cloudflared runs on the host as a systemd service (tunnel "midgard"),
+# so nginx is published on loopback only; route the tunnel to http://localhost:8080
+services:
+  web:
+    image: nginx:1.29-alpine
+    container_name: ktb-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
